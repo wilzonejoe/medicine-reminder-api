@@ -1,1 +1,16 @@
-'{}' 
+{
+   "repositories": [{
+     "type": "package",
+     "package": {
+        "name": "wilzonejoe/medicine-reminder-api",
+        "version": "master",
+        "source": {
+            "url": "https://github.com/wilzonejoe/medicine-reminder-api.git",
+            "type": "git",
+            "reference": "master"
+        }
+    }
+  }],
+  "require": {
+      "wilzonejoe/medicine-reminder-api": "master"
+  }
