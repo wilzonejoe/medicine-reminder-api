@@ -33,11 +33,7 @@ else {
                 $response["message"] = "Database connection failure";
             } else {
                 $stmt = $conn->prepare("insert into users" . "(firstname,lastname,username,password)" . " values (?,?,?,?)");
-                $stmt->bind_param("ssss", $fname, $lname, $loginName, $loginSecret);
-                $fname = $firstname;
-                $lname = $lastname;
-                $loginName =  $username;
-                $loginSecret = $password;
+                $stmt->bind_param("ssss", $firstname, $lastname, $username, $password);
     
                 $result = $stmt->execute();
                 if (!$result) {
